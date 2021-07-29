@@ -1,0 +1,306 @@
+
+body{
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    font-size: 13px;
+}
+
+/* couleurs */
+:root {
+    --white: #ffffff;
+    --gray-light: #f5fbfc;
+    --gray-dark: #08090a;
+    --green: #35b8be;
+    --green-dark: #1b9097;
+    --green-light: #f5fbfc;
+    --blue-dark: #546285;
+}
+
+/* marge gauche droite */
+.container{
+    width: 60%;
+    margin: auto;
+}
+
+/* couleur des p +marge */
+section div p{
+    color: var(--blue-dark);
+    margin-bottom: 40px;
+}
+
+/* bouton */
+.btn{
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-image: url('../images/button_wave.svg');
+    background-color: var(--green);
+    color: var(--white);
+    text-decoration: none;
+    transition: 500ms;
+}
+.btn:hover{
+    background-color: var(--blue-dark);
+    transition: 500ms;
+}
+
+
+/* HEADER */
+
+/* phrase haut */
+header p{
+    margin-top: 0;
+    padding: 15px;
+    color: var(--white);
+    text-align: center;
+}
+
+/* bandeau haut */
+.p-header{
+    background-image: url('../images/banner_wave.svg');
+    background-color: var(--green);
+    margin-top: 0%;
+}
+
+
+/* NAV */
+
+/* effacement menu burger pour mobil */
+.burg{
+    display:none
+}
+/* placement dans barre nav */
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* mise en forme liste */
+nav ul li{
+    list-style-type: none;
+    display: inline;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 10px;
+    margin-bottom: 0;
+}
+
+/* taille logo */
+div .log{
+    width: 38px;
+}
+
+
+/* SECTION 1 'Beautiful' */
+
+h1{
+    font-size: 3.5em;
+    line-height: 100%;
+    font-weight:700;
+}
+
+/* mot bleu dans h1 */
+.policeblue{
+    color: var(--green);
+}
+
+/* redimension image1 */
+.imgburger{
+    width: 325px;
+}
+
+/* div pour flexibiliser */
+.cards1-2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+
+/* SECTION 2 'The home' */
+
+/* div pour flexibiliser */
+.cards3-4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+/* arriere plan pour section 2 */
+.back{
+    background-color: var(--green-light);
+}
+
+/* redimension image2 */
+.imgfemme{
+    width: 350px;
+}
+
+
+/* SECTION 3 'How it works'*/
+
+h2{
+    color: var(--green);
+    font-size: 3em;
+}
+
+/* div pour flexibiliser */
+.cards5-6-7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10%;
+    gap: 30px;
+    text-align: center;
+    padding-bottom: 100px;
+}
+
+/* titre section 3 centré */
+#center{
+    text-align: center;
+}
+
+/* redimension 3 dernieres images */
+.imgplate{
+    width: 250px;
+}
+.imgphone{
+    width: 300px;
+}
+.imghouse{
+    width: 250px;
+}
+
+
+/* FOOTER */
+
+/* mise en forme list footer */
+footer ul li {
+    list-style-type: none;
+    display: inline;
+}
+footer ul li a{
+    text-decoration: none;
+    color: black;
+    margin-right: 20px;
+}
+
+/* div pour flexibiliser */
+footer .foot{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+/* RESPONSIVE */
+
+@media screen and (max-width:375px){
+
+    /* SECTION HEADER */
+
+    /* effacement bandeau phrase haut */
+    header p{
+        display: none;
+    }
+
+    /* SECTION NAV */
+    
+    /* effacement liste */
+    .list-nav{
+        display:none;
+    }
+
+    /* redimension logo */
+    div .log{
+        width: 25px;
+    }
+    /* apparition menu burger */
+    .burg{
+        display:flex;
+        background-color: var(--green-light);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    /* alignement logo avec menu */
+    .nav{
+        display: flex;
+        align-items: center;
+    }
+
+    /* SECTION 1 'Beautiful' */
+
+    /* reduction marge gauche droite */
+    .container{
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+    }
+    
+    /* passage photo en dessous avec un display block */
+    .cards1-2{
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    /* redimension et placement image1 */
+    .imgburger{
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    /* SECTION 2 'The home' */
+
+    /* background vert */
+    .back{
+        margin: 0 10px  10px;
+        padding-bottom: 20px;
+    }
+
+    /* passage photo en dessous avec un display block */
+    .cards3-4{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    /* redimension image2 */
+    .imgfemme{
+        width: 100%;
+        margin-top: 80px;
+    }
+    
+    /* SECTION 3 'How it works'  */
+
+    /* passage 3 photos les unes en dessous
+    des autresavec un display block */
+    .cards5-6-7{
+        display: block;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    .imgplate, .imgphone, .imghouse{
+        padding-top: 20%;
+        width: 90%;
+    }
+
+    /* SECTION FOOTER */
+
+    footer .foot{
+        display: block;
+    }
+    footer ul{
+        padding: 0;
+        margin-bottom: 0;
+    }
+}
