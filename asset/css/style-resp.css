@@ -1,0 +1,104 @@
+/* RESPONSIVE */
+
+@media screen and (max-width:375px){
+
+    /* SECTION HEADER */
+
+    /* effacement bandeau phrase haut */
+    header p{
+        display: none;
+    }
+
+    /* SECTION NAV */
+    
+    /* effacement liste */
+    .list-nav{
+        display:none;
+    }
+
+    /* redimension logo */
+    div .log{
+        width: 25px;
+    }
+    /* apparition menu burger */
+    .burg{
+        display:flex;
+        background-color: var(--green-light);
+        padding: 10px;
+        border-radius: 5px;
+    }
+    /* alignement logo avec menu */
+    .nav{
+        display: flex;
+        align-items: center;
+    }
+
+    /* SECTION 1 'Beautiful' */
+
+    /* reduction marge gauche droite */
+    .container{
+        width: 80%;
+        margin: auto;
+        padding-top: 20px;
+    }
+    
+    /* passage photo en dessous avec un display block */
+    .cards1-2{
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 80px;
+    }
+
+    /* redimension et placement image1 */
+    .imgburger{
+        width: 100%;
+        margin-top: 80px;
+    }
+
+    /* SECTION 2 'The home' */
+
+    /* background vert */
+    .back{
+        margin: 0 10px  10px;
+        padding-bottom: 20px;
+    }
+
+    /* passage photo en dessous avec un display block */
+    .cards3-4{
+        display: block;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 60px;
+    }
+
+    /* redimension image2 */
+    .imgfemme{
+        width: 100%;
+        margin-top: 80px;
+    }
+    
+    /* SECTION 3 'How it works'  */
+
+    /* passage 3 photos les unes en dessous
+    des autresavec un display block */
+    .cards5-6-7{
+        display: block;
+        text-align: center;
+        padding-bottom: 80px;
+    }
+    .imgplate, .imgphone, .imghouse{
+        padding-top: 20%;
+        width: 90%;
+    }
+
+    /* SECTION FOOTER */
+
+    footer .foot{
+        display: block;
+    }
+    footer ul{
+        padding: 0;
+        margin-bottom: 0;
+    }
+}
